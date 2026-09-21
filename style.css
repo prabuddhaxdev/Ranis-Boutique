@@ -322,7 +322,7 @@ body {
   width: 100%;
 }
 .watermark-container::after {
-  content: "© Rani's Boutique";
+  content: "© Ranu's Boutique";
   position: absolute;
   bottom: 15px;
   right: 15px;
