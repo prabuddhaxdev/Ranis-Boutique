@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portrait Paintings | Ranu's Boutique</title>
+
+    <meta
+      name="description"
+      content="Custom hand-painted portrait paintings by Ranu's Boutique. Turn your memories into beautiful one-of-a-kind artwork."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: "#F8F5EF",
+              beige: "#DFCCB7",
+              ivory: "#FFFDF8",
+              rosegold: "#A55D67",
+              gold: "#C9A14A",
+              golddark: "#A8862F",
+              blush: "#EAD0D0",
+              sage: "#8B8560",
+              offwhite: "#FAF8F5",
+              textmain: "#1A1A1A",
+              textlight: "#555555",
+            },
+
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', "serif"],
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-offwhite text-textmain font-sans overflow-x-hidden">
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
+    <nav
+      id="navbar"
+      class="navbar fixed top-0 left-0 w-full py-6 transition-all duration-300 z-50"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center"
+      >
+
+        <a
+          href="index.html"
+          class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-textmain leading-none"
+          aria-label="Ranu's Boutique — Home"
+        >
+          Ranu's Boutique
+        </a>
+
+        <div
+          class="nav-links fixed top-0 right-0 h-screen w-72 max-w-[85vw] bg-cream/95 md:bg-transparent backdrop-blur-md md:backdrop-blur-none shadow-2xl md:shadow-none p-12 md:p-0 flex flex-col md:flex-row items-start md:items-center justify-start md:justify-end gap-8 md:gap-10 transform translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out md:static md:h-auto md:w-auto z-40"
+        >
+
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+
+          <a href="about.html" class="nav-link">
+            The Artist
+          </a>
+
+          <a href="gallery.html" class="nav-link">
+            Gallery
+          </a>
+
+          <a href="contact.html" class="nav-link">
+            Contact
+          </a>
+
+          <a href="custom-order.html" class="nav-cta">
+            Inquire
+          </a>
+
+        </div>
+
+        <div
+          class="hamburger block md:hidden text-xl cursor-pointer text-textmain z-50"
+        >
+          <i class="fas fa-bars"></i>
+        </div>
+
+      </div>
+    </nav>
+
+
+    <!-- =========================================================
+         PAGE HEADER
+    ========================================================== -->
+
+    <header
+      class="pt-40 pb-16 bg-gradient-to-br from-cream to-beige text-center"
+    >
+
+      <div
+        class="max-w-7xl mx-auto px-6 w-full text-center reveal-up"
+      >
+
+        <span
+          class="block text-[0.85rem] tracking-[4px] uppercase text-rosegold font-semibold mb-2"
+        >
+          Fine Art
+        </span>
+
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl font-serif text-textmain mb-4"
+        >
+          Portrait Paintings
+        </h1>
+
+        <img
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' fill='none' stroke='%23A55D67' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10,10 Q30,-5 50,10 T90,10' /%3E%3C/svg%3E"
+          class="mx-auto w-16 opacity-80 mb-6"
+          alt=""
+        />
+
+        <p
+          class="font-serif italic text-lg text-textlight max-w-xl mx-auto"
+        >
+          Transform your most treasured memories into expressive,
+          hand-painted portraits created especially for you.
+        </p>
+
+      </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         SERVICE DETAILS
+    ========================================================== -->
+
+    <section class="py-16 md:py-24">
+
+      <div
+        class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center"
+      >
+
+        <!-- Main Portrait Image -->
+
+        <div class="relative reveal-left">
+
+          <div class="watermark-container">
+
+            <img
+              src="public/Painting-1.jpeg"
+              alt="Hand-painted portrait artwork"
+              loading="lazy"
+              class="w-full rounded-3xl relative z-10 shadow-lg"
+            />
+
+          </div>
+
+          <div
+            class="absolute -top-5 -left-5 w-full h-full border-2 border-beige rounded-3xl z-0"
+          ></div>
+
+        </div>
+
+
+        <!-- Customization Information -->
+
+        <div class="reveal-right">
+
+          <h2
+            class="text-3xl sm:text-4xl md:text-5xl font-serif text-textmain mb-6"
+          >
+            Customization Options
+          </h2>
+
+          <p
+            class="text-textlight text-base md:text-lg mb-6 leading-relaxed"
+          >
+            Every portrait we create begins with your special memory.
+            We carefully transform your photographs and ideas into a
+            unique hand-painted artwork that captures the emotion and
+            personality behind the moment.
+          </p>
+
+
+          <ul
+            class="customization-list space-y-4 mb-8 text-textlight text-sm md:text-base"
+          >
+
+            <li>
+              <strong>Portrait Style:</strong>
+              Choose realistic portraits, expressive artwork,
+              artistic interpretations, or traditional-inspired styles.
+            </li>
+
+            <li>
+              <strong>Subject Choices:</strong>
+              Individual portraits, couples, families, children,
+              pets, or meaningful special moments.
+            </li>
+
+            <li>
+              <strong>Color Themes:</strong>
+              Choose colors and tones that match your personal
+              preference, photograph, or intended space.
+            </li>
+
+            <li>
+              <strong>Background:</strong>
+              Keep the original background or create a customized
+              artistic background for your portrait.
+            </li>
+
+            <li>
+              <strong>Reference Photos:</strong>
+              You can provide your favorite photograph or multiple
+              photographs to help create the final artwork.
+            </li>
+
+            <li>
+              <strong>Timeline:</strong>
+              The completion time depends on the portrait size,
+              complexity, and customization requirements.
+            </li>
+
+          </ul>
+
+
+          <a
+            href="custom-order.html"
+            class="inline-block py-4 px-10 rounded-full font-medium uppercase tracking-wider text-xs bg-textmain text-white hover:bg-rosegold transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg text-center mt-4"
+          >
+            Request This Custom Portrait
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SAMPLE GALLERY
+    ========================================================== -->
+
+    <section class="py-16 md:py-24 bg-cream">
+
+      <div
+        class="max-w-7xl mx-auto px-6 w-full text-center"
+      >
+
+        <h2
+          class="text-3xl sm:text-4xl md:text-5xl font-serif text-textmain mb-4 reveal-up"
+        >
+          Sample Gallery
+        </h2>
+
+        <p
+          class="font-serif italic text-lg text-textlight max-w-xl mx-auto mb-12 reveal-up"
+        >
+          Explore examples of our hand-painted portrait artwork.
+          These pieces showcase the possibilities for your own
+          personalized painting.
+        </p>
+
+
+        <!-- Six Portrait Paintings -->
+
+        <div
+          class="columns-1 sm:columns-2 md:columns-3 gap-6 mb-12"
+        >
+
+          <!-- Painting 1 -->
+
+          <div
+            class="break-inside-avoid mb-6 relative rounded-2xl overflow-hidden cursor-zoom-in group reveal-up"
+          >
+
+            <img
+              src="public/Painting-1.jpeg"
+              alt="Hand-painted portrait painting 1"
+              loading="lazy"
+              class="w-full rounded-2xl transition-transform duration-500 group-hover:scale-105"
+            />
+
+          </div>
+
+
+          <!-- Painting 2 -->
+
+          <div
+            class="break-inside-avoid mb-6 relative rounded-2xl overflow-hidden cursor-zoom-in group reveal-up"
+            style="transition-delay: 100ms"
+          >
+
+            <img
+              src="public/Painting-2.jpeg"
+              alt="Hand-painted portrait painting 2"
+              loading="lazy"
+              class="w-full rounded-2xl transition-transform duration-500 group-hover:scale-105"
+            />
+
+          </div>
+
+
+          <!-- Painting 3 -->
+
+          <div
+            class="break-inside-avoid mb-6 relative rounded-2xl overflow-hidden cursor-zoom-in group reveal-up"
+            style="transition-delay: 200ms"
+          >
+
+            <img
+              src="public/Painting-3.jpeg"
+              alt="Hand-painted portrait painting 3"
+              loading="lazy"
+              class="w-full rounded-2xl transition-transform duration-500 group-hover:scale-105"
+            />
+
+          </div>
+
+
+          <!-- Painting 4 -->
+
+          <div
+            class="break-inside-avoid mb-6 relative rounded-2xl overflow-hidden cursor-zoom-in group reveal-up"
+            style="transition-delay: 300ms"
+          >
+
+            <img
+              src="public/Painting-4.jpeg"
+              alt="Hand-painted portrait painting 4"
+              loading="lazy"
+              class="w-full rounded-2xl transition-transform duration-500 group-hover:scale-105"
+            />
+
+          </div>
+
+
+          <!-- Painting 5 -->
+
+          <div
+            class="break-inside-avoid mb-6 relative rounded-2xl overflow-hidden cursor-zoom-in group reveal-up"
+            style="transition-delay: 400ms"
+          >
+
+            <img
+              src="public/Painting-5.jpeg"
+              alt="Hand-painted portrait painting 5"
+              loading="lazy"
+              class="w-full rounded-2xl transition-transform duration-500 group-hover:scale-105"
+            />
+
+          </div>
+
+
+          <!-- Painting 6 -->
+
+          <div
+            class="break-inside-avoid mb-6 relative rounded-2xl overflow-hidden cursor-zoom-in group reveal-up"
+            style="transition-delay: 500ms"
+          >
+
+            <img
+              src="public/Painting-6.jpeg"
+              alt="Hand-painted portrait painting 6"
+              loading="lazy"
+              class="w-full rounded-2xl transition-transform duration-500 group-hover:scale-105"
+            />
+
+          </div>
+
+        </div>
+
+
+        <!-- Gallery Button -->
+
+        <a
+          href="gallery.html"
+          class="inline-block py-3 px-8 rounded-full font-medium uppercase tracking-wider text-xs border border-textmain text-textmain bg-transparent hover:bg-textmain hover:text-white transition-all duration-300 cursor-pointer reveal-up"
+        >
+          View Full Gallery
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CTA
+    ========================================================== -->
+
+    <section
+      class="relative py-20 bg-textmain text-white text-center overflow-hidden reveal-up"
+    >
+
+      <div
+        class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-textmain via-black to-textmain opacity-80 z-0"
+      ></div>
+
+      <div
+        class="max-w-7xl mx-auto px-6 w-full relative z-10 flex flex-col items-center"
+      >
+
+        <h2
+          class="text-3xl sm:text-4xl md:text-5xl font-serif text-white mb-6"
+        >
+          Turn Your Memory Into Art
+        </h2>
+
+        <p
+          class="text-gray-300 max-w-xl mb-6"
+        >
+          Share your favorite photograph with us and let us
+          create a one-of-a-kind portrait painting for you.
+        </p>
+
+        <a
+          href="custom-order.html"
+          class="inline-block py-4 px-10 rounded-full font-medium uppercase tracking-wider text-xs bg-white text-textmain hover:bg-beige transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg text-center mt-4"
+        >
+          Start Your Custom Order
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="bg-textmain text-white pt-20 pb-10">
+
+      <div
+        class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
+      >
+
+        <!-- Brand -->
+
+        <div>
+
+          <h2 class="font-serif text-3xl mb-4">
+            Ranu's Boutique
+          </h2>
+
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Creating one-of-a-kind, hand-painted masterpieces
+            that celebrate artistry and individuality.
+          </p>
+
+        </div>
+
+
+        <!-- Quick Links -->
+
+        <div>
+
+          <h4
+            class="text-beige font-semibold tracking-wider text-sm uppercase mb-6"
+          >
+            Quick Links
+          </h4>
+
+          <ul class="space-y-3 text-sm text-gray-400">
+
+            <li>
+              <a
+                href="about.html"
+                class="hover:text-white transition-colors duration-300"
+              >
+                The Artist
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="gallery.html"
+                class="hover:text-white transition-colors duration-300"
+              >
+                Gallery
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="custom-order.html"
+                class="hover:text-white transition-colors duration-300"
+              >
+                Request Custom Order
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="contact.html"
+                class="hover:text-white transition-colors duration-300"
+              >
+                Contact Us
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- Contact -->
+
+        <div>
+
+          <h4
+            class="text-beige font-semibold tracking-wider text-sm uppercase mb-6"
+          >
+            Contact
+          </h4>
+
+          <p class="text-gray-400 text-sm mb-2">
+            Email: ranudasmondal@gmail.com
+          </p>
+
+          <p class="text-gray-400 text-sm mb-2">
+            WhatsApp: +91 8820988244
+          </p>
+
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Location: Jangalpara, PO Magra, Hooghly,
+            West Bengal 712148
+          </p>
+
+        </div>
+
+
+        <!-- Social -->
+
+        <div>
+
+          <h4
+            class="text-beige font-semibold tracking-wider text-sm uppercase mb-6"
+          >
+            Connect
+          </h4>
+
+          <div class="flex gap-4">
+
+            <a
+              href="https://www.instagram.com/ranus_atelier/"
+              target="_blank"
+              class="w-10 h-10 rounded-full bg-white/10 hover:bg-rosegold text-white flex items-center justify-center transition-colors duration-300"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-white/10 hover:bg-rosegold text-white flex items-center justify-center transition-colors duration-300"
+            >
+              <i class="fab fa-pinterest"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/profile.php?id=100063997442026"
+              target="_blank"
+              class="w-10 h-10 rounded-full bg-white/10 hover:bg-rosegold text-white flex items-center justify-center transition-colors duration-300"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Copyright -->
+
+      <div
+        class="border-t border-white/10 pt-8 text-center text-xs text-gray-600"
+      >
+
+        <p>
+          &copy; 2026 Ranu's Boutique. All Rights Reserved.
+        </p>
+
+      </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         WHATSAPP BUTTON
+    ========================================================== -->
+
+    <a
+      href="https://wa.me/918820988244"
+      target="_blank"
+      class="whatsapp-float"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
