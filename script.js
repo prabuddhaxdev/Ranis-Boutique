@@ -106,7 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
         galleryItems.forEach(item => {
             item.addEventListener('click', () => {
                 const imgUrl = item.querySelector('img').src;
-                const text = item.querySelector('.overlay-text').innerText;
+                const textElement = item.querySelector('.text-white');
+                const text = textElement ? textElement.innerText : '';
 
                 lightboxImg.src = imgUrl;
                 lightboxCaption.innerText = text;

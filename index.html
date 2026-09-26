@@ -1,590 +1,981 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ranu's Boutique | Hand-Painted Custom Luxury</title>
-    <meta
-      name="description"
-      content="Premium hand-painted custom dresses, sarees, and portraits. Each piece is one-of-a-kind and handcrafted with love."
-    />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- FontAwesome for Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <!-- Custom CSS (Only animations and custom noise) -->
-    <link rel="stylesheet" href="style.css" />
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              cream: "#F8F5EF",
-              beige: "#DFCCB7",
-              ivory: "#FFFDF8",
-              rosegold: "#A55D67",
-              gold: "#C9A14A",
-              golddark: "#A8862F",
-              blush: "#EAD0D0",
-              sage: "#8B8560",
-              offwhite: "#FAF8F5",
-              textmain: "#1A1A1A",
-              textlight: "#555555",
-            },
-            fontFamily: {
-              serif: ['"Cormorant Garamond"', "serif"],
-              sans: ["Poppins", "sans-serif"],
-            },
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ranu's Boutique | Hand-Painted Custom Luxury</title>
+
+  <meta
+    name="description"
+    content="Premium hand-painted custom dresses, sarees, and portraits. Each piece is one-of-a-kind and handcrafted with love."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: "#F8F5EF",
+            beige: "#DFCCB7",
+            ivory: "#FFFDF8",
+            rosegold: "#A55D67",
+            gold: "#C9A14A",
+            golddark: "#A8862F",
+            blush: "#EAD0D0",
+            sage: "#8B8560",
+            offwhite: "#FAF8F5",
+            textmain: "#1A1A1A",
+            textlight: "#555555",
+          },
+
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', "serif"],
+            sans: ["Poppins", "sans-serif"],
           },
         },
-      };
-    </script>
-  </head>
-  <body class="bg-offwhite text-textmain font-sans overflow-x-hidden relative">
-    <div class="overflow-x-hidden w-full">
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-offwhite text-textmain font-sans overflow-x-hidden relative">
+
+  <div class="overflow-x-hidden w-full">
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
     <nav
       id="navbar"
       class="navbar fixed top-0 left-0 w-full py-5 sm:py-6 transition-all duration-300 z-50"
     >
+
       <div
         class="max-w-7xl mx-auto px-5 sm:px-6 w-full flex justify-between items-center"
       >
+
+        <!-- Logo -->
         <a
           href="index.html"
           class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-textmain leading-none"
           aria-label="Ranu's Boutique — Home"
-          >Ranu's Boutique</a
         >
+          Ranu's Boutique
+        </a>
 
+        <!-- Navigation Links -->
         <div
           class="nav-links fixed top-0 right-0 h-screen w-72 max-w-[85vw] bg-cream/95 md:bg-transparent backdrop-blur-md md:backdrop-blur-none shadow-2xl md:shadow-none p-12 md:p-0 flex flex-col md:flex-row items-start md:items-center justify-start md:justify-end gap-8 md:gap-10 transform translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out md:static md:h-auto md:w-auto z-40"
         >
-          <a href="index.html" class="nav-link nav-active">Home</a>
-          <a href="about.html" class="nav-link">The Artist</a>
-          <a href="gallery.html" class="nav-link">Gallery</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-          <a href="custom-order.html" class="nav-cta">Inquire</a>
+
+          <a href="index.html" class="nav-link nav-active">
+            Home
+          </a>
+
+          <a href="about.html" class="nav-link">
+            The Artist
+          </a>
+
+          <a href="gallery.html" class="nav-link">
+            Gallery
+          </a>
+
+          <a href="contact.html" class="nav-link">
+            Contact
+          </a>
+
+          <a href="custom-order.html" class="nav-cta">
+            Inquire
+          </a>
+
         </div>
 
+        <!-- Mobile Menu -->
         <div
           class="hamburger block md:hidden text-xl cursor-pointer text-textmain z-50"
         >
           <i class="fas fa-bars"></i>
         </div>
+
       </div>
+
     </nav>
 
-    <!-- Hero Section -->
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
     <header
       class="relative h-screen min-h-[640px] flex items-center justify-center text-center overflow-hidden"
       id="home"
     >
+
       <div class="hero-bg absolute inset-0 z-0">
+
         <img
           src="public/11.jpeg"
           alt="Hand painted silk fabric"
           class="w-full h-full object-cover"
         />
+
         <div
           class="hero-overlay absolute inset-0 bg-gradient-to-b from-offwhite/30 to-offwhite/90"
         ></div>
+
       </div>
 
-      <div class="max-w-4xl mx-auto px-5 sm:px-6 relative z-10 w-full reveal-up pt-24 pb-28 sm:pb-24">
+
+      <div
+        class="max-w-4xl mx-auto px-5 sm:px-6 relative z-10 w-full reveal-up pt-24 pb-28 sm:pb-24"
+      >
+
         <span
           class="block text-[0.75rem] sm:text-[0.85rem] tracking-[3px] sm:tracking-[4px] uppercase text-rosegold font-semibold mb-2"
-          >Exquisite Craftsmanship</span
         >
+          Exquisite Craftsmanship
+        </span>
+
         <h1
           class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-medium leading-tight sm:leading-none mb-4 sm:mb-6 text-textmain"
         >
           Hand-Painted Custom Dresses Made Just for You
         </h1>
+
         <p
           class="text-sm sm:text-base md:text-lg lg:text-xl text-textlight max-w-2xl mx-auto mb-6 sm:mb-8 px-2 sm:px-0"
         >
-          Every saree, kurti, portrait, and dress is handcrafted with love and
-          created exclusively for you.
+          Every saree, kurti, portrait, and dress is handcrafted with love
+          and created exclusively for you.
         </p>
+
         <div
           class="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4"
         >
+
           <a
             href="custom-order.html"
             class="w-full sm:w-auto inline-block py-3.5 sm:py-4 px-8 sm:px-10 rounded-full font-medium uppercase tracking-wider text-xs bg-textmain text-white hover:bg-rosegold transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg text-center"
-            >Request a Custom Order</a
           >
+            Request a Custom Order
+          </a>
+
           <a
             href="#collections"
             class="w-full sm:w-auto inline-block py-3.5 sm:py-4 px-8 sm:px-10 rounded-full font-medium uppercase tracking-wider text-xs bg-white text-textmain hover:bg-beige transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg text-center"
-            >View Services</a
           >
+            View Services
+          </a>
+
         </div>
+
       </div>
 
+
+      <!-- Scroll Indicator -->
       <div
         class="scroll-indicator absolute left-1/2 -translate-x-1/2 bottom-6 sm:bottom-8 flex flex-col items-center gap-1.5 sm:gap-2 text-[0.65rem] sm:text-xs uppercase tracking-wider sm:tracking-widest text-textmain z-10"
       >
+
         <span>Discover</span>
-        <div class="line w-px h-8 sm:h-12 bg-textmain relative overflow-hidden"></div>
+
+        <div
+          class="line w-px h-8 sm:h-12 bg-textmain relative overflow-hidden"
+        ></div>
+
       </div>
+
     </header>
 
-    <!-- Feature Categories Section -->
+
+    <!-- =========================
+         FEATURE CATEGORIES
+    ========================== -->
     <section id="collections" class="py-16 md:py-24">
+
       <div class="max-w-7xl mx-auto px-5 sm:px-6 w-full">
+
+        <!-- Section Heading -->
         <div class="text-center mb-12 md:mb-16 reveal-up">
+
           <span
             class="block text-[0.75rem] sm:text-[0.85rem] tracking-[3px] sm:tracking-[4px] uppercase text-rosegold font-semibold mb-2"
-            >Our Offerings</span
           >
+            Our Offerings
+          </span>
+
           <h2
             class="text-2xl sm:text-4xl md:text-5xl font-serif text-textmain mb-4"
           >
             What We Offer
           </h2>
+
           <img
             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' fill='none' stroke='%23A55D67' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10,10 Q30,-5 50,10 T90,10' /%3E%3C/svg%3E"
             class="mx-auto w-16 opacity-80 mb-6"
             alt=""
           />
-          <p class="font-serif italic text-base sm:text-lg text-textlight max-w-xl mx-auto px-2 sm:px-0">
-            Discover our range of handcrafted masterpieces. Click to view custom
-            options.
+
+          <p
+            class="font-serif italic text-base sm:text-lg text-textlight max-w-xl mx-auto px-2 sm:px-0"
+          >
+            Discover our range of handcrafted masterpieces. Click to view
+            custom options.
           </p>
+
         </div>
 
+
+        <!-- =========================
+             CATEGORY CARDS
+        ========================== -->
+
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-12"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-12"
         >
-          <!-- Card 1 -->
+
+          <!-- Card 1 - Sarees -->
           <div
             class="category-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 reveal-up"
           >
+
             <a href="service-sarees.html">
-              <div class="h-[280px] sm:h-[350px] md:h-[400px] overflow-hidden">
+
+              <div
+                class="h-[280px] sm:h-[350px] md:h-[400px] overflow-hidden"
+              >
+
                 <img
                   src="public/7.jpeg"
                   alt="Hand-painted Sarees"
                   loading="lazy"
                   class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
+
               </div>
+
               <div class="p-6 sm:p-8 text-center">
-                <h3 class="text-xl sm:text-2xl font-serif text-textmain mb-2">
+
+                <h3
+                  class="text-xl sm:text-2xl font-serif text-textmain mb-2"
+                >
                   Hand-painted Sarees
                 </h3>
-                <p class="text-textlight mb-4 sm:mb-6 text-sm sm:text-base">
+
+                <p
+                  class="text-textlight mb-4 sm:mb-6 text-sm sm:text-base"
+                >
                   Elegant, flowing drapes adorned with custom artwork.
                 </p>
+
                 <span
                   class="font-medium text-rosegold inline-flex items-center gap-2 hover:translate-x-1 transition-transform duration-300"
-                  >View Options <i class="fas fa-arrow-right text-xs"></i
-                ></span>
+                >
+                  View Options
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </span>
+
               </div>
+
             </a>
+
           </div>
-          <!-- Card 2 -->
+
+
+          <!-- Card 2 - Kurtis -->
           <div
             class="category-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 reveal-up"
             style="transition-delay: 100ms"
           >
+
             <a href="service-kurtis.html">
-              <div class="h-[280px] sm:h-[350px] md:h-[400px] overflow-hidden">
+
+              <div
+                class="h-[280px] sm:h-[350px] md:h-[400px] overflow-hidden"
+              >
+
                 <img
                   src="public/2.jpeg"
                   alt="Hand-painted Kurtis"
                   loading="lazy"
                   class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
+
               </div>
+
               <div class="p-6 sm:p-8 text-center">
-                <h3 class="text-xl sm:text-2xl font-serif text-textmain mb-2">
+
+                <h3
+                  class="text-xl sm:text-2xl font-serif text-textmain mb-2"
+                >
                   Hand-painted Kurtis
                 </h3>
-                <p class="text-textlight mb-4 sm:mb-6 text-sm sm:text-base">
+
+                <p
+                  class="text-textlight mb-4 sm:mb-6 text-sm sm:text-base"
+                >
                   Contemporary silhouettes with traditional artistic touches.
                 </p>
+
                 <span
                   class="font-medium text-rosegold inline-flex items-center gap-2 hover:translate-x-1 transition-transform duration-300"
-                  >View Options <i class="fas fa-arrow-right text-xs"></i
-                ></span>
+                >
+                  View Options
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </span>
+
               </div>
+
             </a>
+
           </div>
-          <!-- Card 3 -->
+
+
+          <!-- Card 3 - Punjabi Suits -->
           <div
             class="category-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 reveal-up"
             style="transition-delay: 200ms"
           >
+
             <a href="service-sarees.html">
-              <div class="h-[280px] sm:h-[350px] md:h-[400px] overflow-hidden">
+
+              <div
+                class="h-[280px] sm:h-[350px] md:h-[400px] overflow-hidden"
+              >
+
                 <img
                   src="public/11.jpeg"
                   alt="Punjabi Suits"
                   loading="lazy"
                   class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
+
               </div>
+
               <div class="p-6 sm:p-8 text-center">
-                <h3 class="text-xl sm:text-2xl font-serif text-textmain mb-2">
+
+                <h3
+                  class="text-xl sm:text-2xl font-serif text-textmain mb-2"
+                >
                   Punjabi Suits
                 </h3>
-                <p class="text-textlight mb-4 sm:mb-6 text-sm sm:text-base">
+
+                <p
+                  class="text-textlight mb-4 sm:mb-6 text-sm sm:text-base"
+                >
                   Vibrant colors and intricate detailing on premium fabrics.
                 </p>
+
                 <span
                   class="font-medium text-rosegold inline-flex items-center gap-2 hover:translate-x-1 transition-transform duration-300"
-                  >View Options <i class="fas fa-arrow-right text-xs"></i
-                ></span>
+                >
+                  View Options
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </span>
+
               </div>
+
             </a>
+
           </div>
-          <!-- Card 4 -->
+
+
+          <!-- Card 4 - Baby Dresses -->
           <div
             class="category-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 reveal-up"
           >
+
             <a href="service-kurtis.html">
-              <div class="h-[280px] sm:h-[350px] md:h-[400px] overflow-hidden">
+
+              <div
+                class="h-[280px] sm:h-[350px] md:h-[400px] overflow-hidden"
+              >
+
                 <img
                   src="public/12.jpeg"
                   alt="Baby Dresses"
                   loading="lazy"
                   class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
+
               </div>
+
               <div class="p-6 sm:p-8 text-center">
-                <h3 class="text-xl sm:text-2xl font-serif text-textmain mb-2">
+
+                <h3
+                  class="text-xl sm:text-2xl font-serif text-textmain mb-2"
+                >
                   Baby Dresses
                 </h3>
-                <p class="text-textlight mb-4 sm:mb-6 text-sm sm:text-base">
+
+                <p
+                  class="text-textlight mb-4 sm:mb-6 text-sm sm:text-base"
+                >
                   Delicate, charming designs for the little ones.
                 </p>
+
                 <span
                   class="font-medium text-rosegold inline-flex items-center gap-2 hover:translate-x-1 transition-transform duration-300"
-                  >View Options <i class="fas fa-arrow-right text-xs"></i
-                ></span>
+                >
+                  View Options
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </span>
+
               </div>
+
             </a>
+
           </div>
-          <!-- Card 5 -->
+
+
+          <!-- Card 5 - Portrait Paintings -->
           <div
             class="category-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 reveal-up"
             style="transition-delay: 100ms"
           >
-            <a href="gallery.html">
-              <div class="h-[280px] sm:h-[350px] md:h-[400px] overflow-hidden">
+
+            <a href="service-portraits.html">
+
+              <div
+                class="h-[280px] sm:h-[350px] md:h-[400px] overflow-hidden"
+              >
+
                 <img
-                  src="public/1.jpeg"
+                  src="public/Painting-1.jpeg"
                   alt="Portrait Paintings"
                   loading="lazy"
                   class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
+
               </div>
+
               <div class="p-6 sm:p-8 text-center">
-                <h3 class="text-xl sm:text-2xl font-serif text-textmain mb-2">
+
+                <h3
+                  class="text-xl sm:text-2xl font-serif text-textmain mb-2"
+                >
                   Portrait Paintings
                 </h3>
-                <p class="text-textlight mb-4 sm:mb-6 text-sm sm:text-base">
+
+                <p
+                  class="text-textlight mb-4 sm:mb-6 text-sm sm:text-base"
+                >
                   Capture memories with expressive, hand-painted portraits.
                 </p>
+
                 <span
                   class="font-medium text-rosegold inline-flex items-center gap-2 hover:translate-x-1 transition-transform duration-300"
-                  >View Options <i class="fas fa-arrow-right text-xs"></i
-                ></span>
+                >
+                  View Options
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </span>
+
               </div>
+
             </a>
+
           </div>
-          <!-- Card 6 -->
+
+
+          <!-- Card 6 - Canvas -->
           <div
             class="category-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 reveal-up"
             style="transition-delay: 200ms"
           >
+
+            <a href="service-canvas.html">
+
+              <div
+                class="h-[280px] sm:h-[350px] md:h-[400px] overflow-hidden"
+              >
+
+                <img
+                  src="public/canvas-1.jpeg"
+                  alt="Canvas Paintings"
+                  loading="lazy"
+                  class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                />
+
+              </div>
+
+              <div class="p-6 sm:p-8 text-center">
+
+                <h3
+                  class="text-xl sm:text-2xl font-serif text-textmain mb-2"
+                >
+                  Canvas
+                </h3>
+
+                <p
+                  class="text-textlight mb-4 sm:mb-6 text-sm sm:text-base"
+                >
+                  Beautiful custom canvas paintings created with a
+                  personal touch.
+                </p>
+
+                <span
+                  class="font-medium text-rosegold inline-flex items-center gap-2 hover:translate-x-1 transition-transform duration-300"
+                >
+                  View Options
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </span>
+
+              </div>
+
+            </a>
+
+          </div>
+
+
+          <!-- =================================================
+               Card 7 - OTHER CUSTOM WORK
+
+               IMPORTANT:
+               md:col-span-2 md:w-1/2 md:justify-self-center
+               lg:col-span-1 lg:col-start-2
+               centers this card.
+          ================================================== -->
+          <div
+            class="category-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 reveal-up
+            md:col-span-2 md:w-1/2 md:justify-self-center
+            lg:col-span-1 lg:col-start-2 lg:w-auto"
+            style="transition-delay: 300ms"
+          >
+
             <a href="custom-order.html">
-              <div class="h-[280px] sm:h-[350px] md:h-[400px] overflow-hidden">
+
+              <div
+                class="h-[280px] sm:h-[350px] md:h-[400px] overflow-hidden"
+              >
+
                 <img
                   src="public/13.jpeg"
                   alt="Custom Artwork"
                   loading="lazy"
                   class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
+
               </div>
+
               <div class="p-6 sm:p-8 text-center">
-                <h3 class="text-xl sm:text-2xl font-serif text-textmain mb-2">
+
+                <h3
+                  class="text-xl sm:text-2xl font-serif text-textmain mb-2"
+                >
                   Other Custom Work
                 </h3>
-                <p class="text-textlight mb-4 sm:mb-6 text-sm sm:text-base">
-                  Unique pieces tailored to your personal aesthetic and space.
+
+                <p
+                  class="text-textlight mb-4 sm:mb-6 text-sm sm:text-base"
+                >
+                  Unique pieces tailored to your personal aesthetic and
+                  space.
                 </p>
+
                 <span
                   class="font-medium text-rosegold inline-flex items-center gap-2 hover:translate-x-1 transition-transform duration-300"
-                  >View Options <i class="fas fa-arrow-right text-xs"></i
-                ></span>
+                >
+                  View Options
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </span>
+
               </div>
+
             </a>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- How It Works (Timeline) -->
+
+    <!-- =========================
+         HOW IT WORKS
+    ========================== -->
     <section class="py-16 md:py-24">
+
       <div class="max-w-7xl mx-auto px-5 sm:px-6 w-full">
+
         <div class="text-center mb-12 md:mb-16 reveal-up">
+
           <span
             class="block text-[0.75rem] sm:text-[0.85rem] tracking-[3px] sm:tracking-[4px] uppercase text-rosegold font-semibold mb-2"
-            >The Creation Process</span
           >
+            The Creation Process
+          </span>
+
           <h2
             class="text-2xl sm:text-4xl md:text-5xl font-serif text-textmain mb-4"
           >
             How It Works
           </h2>
+
           <img
             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' fill='none' stroke='%23A55D67' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10,10 Q30,-5 50,10 T90,10' /%3E%3C/svg%3E"
             class="mx-auto w-16 opacity-80 mb-6"
             alt=""
           />
-          <p class="font-serif italic text-base sm:text-lg text-textlight max-w-xl mx-auto px-2 sm:px-0">
+
+          <p
+            class="font-serif italic text-base sm:text-lg text-textlight max-w-xl mx-auto px-2 sm:px-0"
+          >
             A simple 4-step process to create your custom masterpiece.
           </p>
+
         </div>
+
 
         <div
           class="relative flex flex-col lg:flex-row gap-8 lg:gap-6 justify-between items-stretch"
         >
-          <!-- Connector Line for Desktop -->
+
+          <!-- Connector -->
           <div
             class="absolute top-[30px] left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-beige to-transparent hidden lg:block z-0"
           ></div>
+
 
           <!-- Step 1 -->
           <div
             class="flex-1 text-center relative z-10 reveal-up flex flex-col items-center"
           >
+
             <div
               class="w-14 h-14 bg-white border-2 border-beige rounded-full flex items-center justify-center text-lg text-rosegold shadow-sm mb-6 transition-all duration-300 hover:bg-rosegold hover:text-white hover:border-rosegold"
             >
               <i class="fas fa-tshirt"></i>
             </div>
+
             <div
               class="bg-white/70 backdrop-blur border border-white/40 p-6 rounded-2xl shadow-sm flex-1 w-full"
             >
+
               <h4 class="font-semibold text-lg text-textmain mb-2">
                 1. Choose Your Base
               </h4>
+
               <p class="text-sm text-textlight">
                 Select from sarees, kurtis, suits, baby dresses, or portraits.
               </p>
+
             </div>
+
           </div>
+
+
           <!-- Step 2 -->
           <div
             class="flex-1 text-center relative z-10 reveal-up flex flex-col items-center"
             style="transition-delay: 150ms"
           >
+
             <div
               class="w-14 h-14 bg-white border-2 border-beige rounded-full flex items-center justify-center text-lg text-rosegold shadow-sm mb-6 transition-all duration-300 hover:bg-rosegold hover:text-white hover:border-rosegold"
             >
               <i class="fas fa-lightbulb"></i>
             </div>
+
             <div
               class="bg-white/70 backdrop-blur border border-white/40 p-6 rounded-2xl shadow-sm flex-1 w-full"
             >
+
               <h4 class="font-semibold text-lg text-textmain mb-2">
                 2. Share Your Idea
               </h4>
+
               <p class="text-sm text-textlight">
                 Discuss your vision, preferred colors, and motifs with us.
               </p>
+
             </div>
+
           </div>
+
+
           <!-- Step 3 -->
           <div
             class="flex-1 text-center relative z-10 reveal-up flex flex-col items-center"
             style="transition-delay: 300ms"
           >
+
             <div
               class="w-14 h-14 bg-white border-2 border-beige rounded-full flex items-center justify-center text-lg text-rosegold shadow-sm mb-6 transition-all duration-300 hover:bg-rosegold hover:text-white hover:border-rosegold"
             >
-              <i class="fas fa-palette"></i>
+              <i class="fas fa-paint-brush"></i>
             </div>
+
             <div
               class="bg-white/70 backdrop-blur border border-white/40 p-6 rounded-2xl shadow-sm flex-1 w-full"
             >
+
               <h4 class="font-semibold text-lg text-textmain mb-2">
-                3. Receive Design Preview
+                3. We Create
               </h4>
+
               <p class="text-sm text-textlight">
-                Review the design concept before the painting begins.
+                Our artist hand-paints your design with care and precision.
               </p>
+
             </div>
+
           </div>
+
+
           <!-- Step 4 -->
           <div
             class="flex-1 text-center relative z-10 reveal-up flex flex-col items-center"
             style="transition-delay: 450ms"
           >
+
             <div
               class="w-14 h-14 bg-white border-2 border-beige rounded-full flex items-center justify-center text-lg text-rosegold shadow-sm mb-6 transition-all duration-300 hover:bg-rosegold hover:text-white hover:border-rosegold"
             >
-              <i class="fas fa-gift"></i>
+              <i class="fas fa-heart"></i>
             </div>
+
             <div
               class="bg-white/70 backdrop-blur border border-white/40 p-6 rounded-2xl shadow-sm flex-1 w-full"
             >
+
               <h4 class="font-semibold text-lg text-textmain mb-2">
-                4. Masterpiece Created
+                4. You Cherish
               </h4>
+
               <p class="text-sm text-textlight">
-                Your unique, hand-painted piece is created and shipped to you.
+                Receive your one-of-a-kind piece and make memories with it.
               </p>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- About Preview -->
+
+    <!-- =========================
+         ABOUT PREVIEW
+    ========================== -->
     <section class="py-16 md:py-24 bg-cream">
+
       <div
-        class="max-w-7xl mx-auto px-5 sm:px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 items-center"
+        class="max-w-7xl mx-auto px-5 sm:px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center"
       >
-        <div class="relative reveal-left">
-          <img
-            src="public/5.jpeg"
-            alt="Artist painting"
-            loading="lazy"
-            class="w-full rounded-3xl relative z-10 shadow-lg"
-          />
-          <div
-            class="absolute -top-3 -left-3 sm:-top-5 sm:-left-5 w-full h-full border-2 border-beige rounded-3xl z-0"
-          ></div>
+
+        <div class="reveal-up">
+
+          <div class="relative">
+
+            <div
+              class="absolute -inset-3 sm:-inset-4 border border-beige rounded-3xl transform translate-x-3 translate-y-3 sm:translate-x-4 sm:translate-y-4"
+            ></div>
+
+            <img
+              src="public/10.jpeg"
+              alt="Ranu's mother, the artist"
+              loading="lazy"
+              class="relative rounded-3xl shadow-lg w-full max-h-[600px] object-cover"
+            />
+
+          </div>
+
         </div>
-        <div class="reveal-right">
+
+
+        <div class="reveal-up lg:pl-4">
+
           <span
             class="block text-[0.75rem] sm:text-[0.85rem] tracking-[3px] sm:tracking-[4px] uppercase text-rosegold font-semibold mb-2"
-            >Meet The Artist</span
           >
+            The Artist
+          </span>
+
           <h2
             class="text-2xl sm:text-4xl md:text-5xl font-serif text-textmain mb-4"
           >
             Crafted by a Mother's Hands
           </h2>
+
           <img
             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' fill='none' stroke='%23A55D67' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10,10 Q30,-5 50,10 T90,10' /%3E%3C/svg%3E"
             class="w-16 opacity-80 mb-6"
             alt=""
           />
-          <p class="text-textlight mb-6 sm:mb-8 text-sm sm:text-base md:text-lg leading-relaxed">
-            Behind every exquisite brushstroke is my mother's dedication to her
-            art. With years of experience and an unyielding passion for colors
-            and fabrics, she transforms ordinary clothing into wearable
-            masterpieces.
+
+          <p
+            class="text-textlight mb-6 sm:mb-8 text-sm sm:text-base md:text-lg leading-relaxed"
+          >
+            Behind every exquisite brushstroke is my mother's dedication to
+            her art. With years of experience and an unyielding passion for
+            colors and fabrics, she transforms ordinary clothing into
+            wearable masterpieces.
           </p>
+
           <a
             href="about.html"
             class="inline-block py-3.5 sm:py-4 px-8 sm:px-10 rounded-full font-medium uppercase tracking-wider text-xs bg-textmain text-white hover:bg-rosegold transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg text-center"
-            >Read Her Story</a
           >
+            Read Her Story
+          </a>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- Gallery Preview -->
+
+    <!-- =========================
+         GALLERY PREVIEW
+    ========================== -->
     <section class="py-16 md:py-24">
+
       <div class="max-w-7xl mx-auto px-5 sm:px-6 w-full text-center">
+
         <h2
           class="text-2xl sm:text-4xl md:text-5xl font-serif text-textmain mb-4 reveal-up"
         >
           Past Custom Orders
         </h2>
+
         <p
           class="font-serif italic text-base sm:text-lg text-textlight max-w-xl mx-auto mb-10 sm:mb-12 reveal-up px-2 sm:px-0"
         >
           A glimpse into the unique pieces we've created for our clients.
         </p>
 
-        <div class="columns-1 sm:columns-2 md:columns-3 gap-4 sm:gap-6 mb-10 sm:mb-12">
+
+        <div
+          class="columns-1 sm:columns-2 md:columns-3 gap-4 sm:gap-6 mb-10 sm:mb-12"
+        >
+
           <div
             class="break-inside-avoid mb-6 relative rounded-2xl overflow-hidden cursor-zoom-in group reveal-up"
           >
+
             <img
               src="public/6.jpeg"
               alt="Hand painted silk saree"
               loading="lazy"
               class="w-full rounded-2xl transition-transform duration-500 group-hover:scale-105"
             />
+
           </div>
+
+
           <div
             class="break-inside-avoid mb-6 relative rounded-2xl overflow-hidden cursor-zoom-in group reveal-up"
             style="transition-delay: 100ms"
           >
+
             <img
               src="public/7.jpeg"
               alt="Custom Portrait"
               loading="lazy"
               class="w-full rounded-2xl transition-transform duration-500 group-hover:scale-105"
             />
+
           </div>
+
+
           <div
             class="break-inside-avoid mb-6 relative rounded-2xl overflow-hidden cursor-zoom-in group reveal-up"
             style="transition-delay: 200ms"
           >
+
             <img
               src="public/8.jpeg"
               alt="Painted Kurti"
               loading="lazy"
               class="w-full rounded-2xl transition-transform duration-500 group-hover:scale-105"
             />
+
           </div>
+
         </div>
+
 
         <a
           href="gallery.html"
           class="inline-block py-3 px-8 rounded-full font-medium uppercase tracking-wider text-xs border border-textmain text-textmain bg-transparent hover:bg-textmain hover:text-white transition-all duration-300 cursor-pointer reveal-up"
-          >View Full Gallery</a
         >
+          View Full Gallery
+        </a>
+
       </div>
+
     </section>
 
-    <!-- Testimonials -->
+
+    <!-- =========================
+         TESTIMONIALS
+    ========================== -->
     <section class="py-16 md:py-24 bg-cream overflow-hidden">
+
       <div class="max-w-7xl mx-auto px-5 sm:px-6 w-full">
+
         <div class="text-center reveal-up">
+
           <i class="fas fa-quote-right text-4xl text-beige mb-6 block"></i>
+
           <span
             class="block text-[0.75rem] sm:text-[0.85rem] tracking-[3px] sm:tracking-[4px] uppercase text-rosegold font-semibold mb-2"
-            >Voices of Our Clients</span
           >
+            Voices of Our Clients
+          </span>
+
           <h2
             class="text-2xl sm:text-4xl md:text-5xl font-serif text-textmain mb-4"
           >
             Client Stories
           </h2>
+
           <img
             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' fill='none' stroke='%23A55D67' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10,10 Q30,-5 50,10 T90,10' /%3E%3C/svg%3E"
             class="mx-auto w-16 opacity-80 mb-6"
             alt=""
           />
-          <p class="font-serif italic text-base sm:text-lg text-textlight max-w-xl mx-auto mb-10 sm:mb-12 px-2 sm:px-0">
+
+          <p
+            class="font-serif italic text-base sm:text-lg text-textlight max-w-xl mx-auto mb-10 sm:mb-12 px-2 sm:px-0"
+          >
             Honest words from the people who wore our art.
           </p>
+
         </div>
 
+
         <div class="testimonial-carousel relative max-w-4xl mx-auto">
-          <!-- Prev / Next Arrows -->
+
+          <!-- Previous -->
           <button
             type="button"
             class="testimonial-arrow testimonial-prev absolute top-1/2 -translate-y-1/2 left-0 sm:-left-2 md:-left-6 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white border border-beige text-rosegold shadow-md flex items-center justify-center hover:bg-rosegold hover:text-white hover:border-rosegold transition-all duration-300 z-10"
@@ -592,6 +983,9 @@
           >
             <i class="fas fa-chevron-left text-sm"></i>
           </button>
+
+
+          <!-- Next -->
           <button
             type="button"
             class="testimonial-arrow testimonial-next absolute top-1/2 -translate-y-1/2 right-0 sm:-right-2 md:-right-6 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white border border-beige text-rosegold shadow-md flex items-center justify-center hover:bg-rosegold hover:text-white hover:border-rosegold transition-all duration-300 z-10"
@@ -600,136 +994,368 @@
             <i class="fas fa-chevron-right text-sm"></i>
           </button>
 
-          <!-- Slides Track -->
+
+          <!-- Testimonial Track -->
           <div class="testimonial-track">
+
+            <!-- Testimonial 1 -->
             <article class="testimonial-slide active">
+
               <div class="testimonial-card">
+
                 <div class="testimonial-stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
                 </div>
-                <p class="testimonial-quote">&ldquo;The saree I ordered for my wedding was breathtaking. The attention to detail in the hand-painted lotuses made me feel like royalty. A true masterpiece.&rdquo;</p>
+
+                <p class="testimonial-quote">
+                  &ldquo;The saree I ordered for my wedding was breathtaking.
+                  The attention to detail in the hand-painted lotuses made me
+                  feel like royalty. A true masterpiece.&rdquo;
+                </p>
+
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar" aria-hidden="true">P</div>
-                  <div class="text-left">
-                    <h5 class="testimonial-name">Priya S.</h5>
-                    <span class="testimonial-role">Bride &middot; Kolkata</span>
+
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    P
                   </div>
+
+                  <div class="text-left">
+
+                    <h5 class="testimonial-name">
+                      Priya S.
+                    </h5>
+
+                    <span class="testimonial-role">
+                      Bride &middot; Kolkata
+                    </span>
+
+                  </div>
+
                 </div>
+
               </div>
+
             </article>
 
+
+            <!-- Testimonial 2 -->
             <article class="testimonial-slide">
+
               <div class="testimonial-card">
+
                 <div class="testimonial-stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
                 </div>
-                <p class="testimonial-quote">&ldquo;I commissioned a portrait of my parents for their anniversary. The emotion captured in the watercolors brought them to tears. Exceptional talent and a beautiful soul behind the brush.&rdquo;</p>
+
+                <p class="testimonial-quote">
+                  &ldquo;I commissioned a portrait of my parents for their
+                  anniversary. The emotion captured in the watercolors brought
+                  them to tears. Exceptional talent and a beautiful soul
+                  behind the brush.&rdquo;
+                </p>
+
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar" aria-hidden="true">A</div>
-                  <div class="text-left">
-                    <h5 class="testimonial-name">Ashmit Banerjee</h5>
-                    <span class="testimonial-role">Son &middot; Odisha</span>
+
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    A
                   </div>
+
+                  <div class="text-left">
+
+                    <h5 class="testimonial-name">
+                      Ashmit Banerjee
+                    </h5>
+
+                    <span class="testimonial-role">
+                      Son &middot; Odisha
+                    </span>
+
+                  </div>
+
                 </div>
+
               </div>
+
             </article>
 
+
+            <!-- Testimonial 3 -->
             <article class="testimonial-slide">
+
               <div class="testimonial-card">
+
                 <div class="testimonial-stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
                 </div>
-                <p class="testimonial-quote">&ldquo;My custom kurti is now my favorite piece of clothing. It&rsquo;s not just a garment; it&rsquo;s a piece of wearable art. The fabric quality is also superb.&rdquo;</p>
+
+                <p class="testimonial-quote">
+                  &ldquo;My custom kurti is now my favorite piece of clothing.
+                  It&rsquo;s not just a garment; it&rsquo;s a piece of wearable
+                  art. The fabric quality is also superb.&rdquo;
+                </p>
+
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar" aria-hidden="true">P</div>
-                  <div class="text-left">
-                    <h5 class="testimonial-name">Preeti Rani</h5>
-                    <span class="testimonial-role">Designer &middot; Bihar</span>
+
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    P
                   </div>
+
+                  <div class="text-left">
+
+                    <h5 class="testimonial-name">
+                      Preeti Rani
+                    </h5>
+
+                    <span class="testimonial-role">
+                      Designer &middot; Bihar
+                    </span>
+
+                  </div>
+
                 </div>
+
               </div>
+
             </article>
 
+
+            <!-- Testimonial 4 -->
             <article class="testimonial-slide">
+
               <div class="testimonial-card">
+
                 <div class="testimonial-stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
                 </div>
-                <p class="testimonial-quote">&ldquo;I gifted my wife a hand-painted saree for our 10th anniversary. She cried opening it. Every motif told a chapter of our story. Thank you for the magic.&rdquo;</p>
+
+                <p class="testimonial-quote">
+                  &ldquo;I gifted my wife a hand-painted saree for our 10th
+                  anniversary. She cried opening it. Every motif told a chapter
+                  of our story. Thank you for the magic.&rdquo;
+                </p>
+
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar" aria-hidden="true">R</div>
-                  <div class="text-left">
-                    <h5 class="testimonial-name">Rahul &amp; Neha M.</h5>
-                    <span class="testimonial-role">Anniversary Gift &middot; Delhi</span>
+
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    R
                   </div>
+
+                  <div class="text-left">
+
+                    <h5 class="testimonial-name">
+                      Rahul &amp; Neha M.
+                    </h5>
+
+                    <span class="testimonial-role">
+                      Anniversary Gift &middot; Delhi
+                    </span>
+
+                  </div>
+
                 </div>
+
               </div>
+
             </article>
 
+
+            <!-- Testimonial 5 -->
             <article class="testimonial-slide">
+
               <div class="testimonial-card">
+
                 <div class="testimonial-stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
                 </div>
-                <p class="testimonial-quote">&ldquo;Ordered matching mother&ndash;daughter kurtis for a family wedding. The custom peacocks, the colors, the fit &mdash; everything was perfect. We&rsquo;ve been flooded with compliments.&rdquo;</p>
+
+                <p class="testimonial-quote">
+                  &ldquo;Ordered matching mother&ndash;daughter kurtis for a
+                  family wedding. The custom peacocks, the colors, the fit
+                  &mdash; everything was perfect. We&rsquo;ve been flooded with
+                  compliments.&rdquo;
+                </p>
+
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar" aria-hidden="true">S</div>
-                  <div class="text-left">
-                    <h5 class="testimonial-name">Sushmita Ghosh</h5>
-                    <span class="testimonial-role">Mother of Two &middot; Bengaluru</span>
+
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    S
                   </div>
+
+                  <div class="text-left">
+
+                    <h5 class="testimonial-name">
+                      Sushmita Ghosh
+                    </h5>
+
+                    <span class="testimonial-role">
+                      Mother of Two &middot; Bengaluru
+                    </span>
+
+                  </div>
+
                 </div>
+
               </div>
+
             </article>
 
+
+            <!-- Testimonial 6 -->
             <article class="testimonial-slide">
+
               <div class="testimonial-card">
+
                 <div class="testimonial-stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
                 </div>
-                <p class="testimonial-quote">&ldquo;The Punjabi suit I commissioned for Diwali was stunning. It felt like wearing a piece of our heritage &mdash; only better, because it was painted just for me.&rdquo;</p>
+
+                <p class="testimonial-quote">
+                  &ldquo;The Punjabi suit I commissioned for Diwali was
+                  stunning. It felt like wearing a piece of our heritage
+                  &mdash; only better, because it was painted just for
+                  me.&rdquo;
+                </p>
+
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar" aria-hidden="true">S</div>
-                  <div class="text-left">
-                    <h5 class="testimonial-name">Sayan Ghosh</h5>
-                    <span class="testimonial-role">School Teacher &middot; Kolkata</span>
+
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    S
                   </div>
+
+                  <div class="text-left">
+
+                    <h5 class="testimonial-name">
+                      Sayan Ghosh
+                    </h5>
+
+                    <span class="testimonial-role">
+                      School Teacher &middot; Kolkata
+                    </span>
+
+                  </div>
+
                 </div>
+
               </div>
+
             </article>
 
+
+            <!-- Testimonial 7 -->
             <article class="testimonial-slide">
+
               <div class="testimonial-card">
+
                 <div class="testimonial-stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
                 </div>
-                <p class="testimonial-quote">&ldquo;My daughter&rsquo;s baby dress was a dream &mdash; soft pastels, tiny hand-painted roses, and finished with so much love. She wore it on her first Diwali and we have the photos forever.&rdquo;</p>
+
+                <p class="testimonial-quote">
+                  &ldquo;My daughter&rsquo;s baby dress was a dream &mdash;
+                  soft pastels, tiny hand-painted roses, and finished with so
+                  much love. She wore it on her first Diwali and we have the
+                  photos forever.&rdquo;
+                </p>
+
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar" aria-hidden="true">A</div>
-                  <div class="text-left">
-                    <h5 class="testimonial-name">Divya Singh</h5>
-                    <span class="testimonial-role">New Mom &middot; Pune</span>
+
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    A
                   </div>
+
+                  <div class="text-left">
+
+                    <h5 class="testimonial-name">
+                      Divya Singh
+                    </h5>
+
+                    <span class="testimonial-role">
+                      New Mom &middot; Pune
+                    </span>
+
+                  </div>
+
                 </div>
+
               </div>
+
             </article>
 
+
+            <!-- Testimonial 8 -->
             <article class="testimonial-slide">
+
               <div class="testimonial-card">
+
                 <div class="testimonial-stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
                 </div>
-                <p class="testimonial-quote">&ldquo;I run a small boutique and the artist helped me create a limited collection of hand-painted scarves. Every single piece sold within a week. We&rsquo;re now planning winter together.&rdquo;</p>
+
+                <p class="testimonial-quote">
+                  &ldquo;I run a small boutique and the artist helped me create
+                  a limited collection of hand-painted scarves. Every single
+                  piece sold within a week. We&rsquo;re now planning winter
+                  together.&rdquo;
+                </p>
+
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar" aria-hidden="true">T</div>
-                  <div class="text-left">
-                    <h5 class="testimonial-name">Tisha D.</h5>
-                    <span class="testimonial-role">Boutique Owner &middot; Goa</span>
+
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    T
                   </div>
+
+                  <div class="text-left">
+
+                    <h5 class="testimonial-name">
+                      Tisha D.
+                    </h5>
+
+                    <span class="testimonial-role">
+                      Boutique Owner &middot; Goa
+                    </span>
+
+                  </div>
+
                 </div>
+
               </div>
+
             </article>
+
           </div>
+
 
           <!-- Dots -->
           <div
@@ -737,143 +1363,281 @@
             role="tablist"
             aria-label="Select a client story"
           >
-            <button type="button" class="testimonial-dot active" aria-label="Story 1 of 8" aria-selected="true"></button>
-            <button type="button" class="testimonial-dot" aria-label="Story 2 of 8"></button>
-            <button type="button" class="testimonial-dot" aria-label="Story 3 of 8"></button>
-            <button type="button" class="testimonial-dot" aria-label="Story 4 of 8"></button>
-            <button type="button" class="testimonial-dot" aria-label="Story 5 of 8"></button>
-            <button type="button" class="testimonial-dot" aria-label="Story 6 of 8"></button>
-            <button type="button" class="testimonial-dot" aria-label="Story 7 of 8"></button>
-            <button type="button" class="testimonial-dot" aria-label="Story 8 of 8"></button>
+
+            <button
+              type="button"
+              class="testimonial-dot active"
+              aria-label="Story 1 of 8"
+              aria-selected="true"
+            ></button>
+
+            <button
+              type="button"
+              class="testimonial-dot"
+              aria-label="Story 2 of 8"
+            ></button>
+
+            <button
+              type="button"
+              class="testimonial-dot"
+              aria-label="Story 3 of 8"
+            ></button>
+
+            <button
+              type="button"
+              class="testimonial-dot"
+              aria-label="Story 4 of 8"
+            ></button>
+
+            <button
+              type="button"
+              class="testimonial-dot"
+              aria-label="Story 5 of 8"
+            ></button>
+
+            <button
+              type="button"
+              class="testimonial-dot"
+              aria-label="Story 6 of 8"
+            ></button>
+
+            <button
+              type="button"
+              class="testimonial-dot"
+              aria-label="Story 7 of 8"
+            ></button>
+
+            <button
+              type="button"
+              class="testimonial-dot"
+              aria-label="Story 8 of 8"
+            ></button>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- CTA Strip -->
+
+    <!-- =========================
+         CTA STRIP
+    ========================== -->
     <section
       class="relative py-16 sm:py-20 bg-textmain text-white text-center overflow-hidden reveal-up"
     >
+
       <div
         class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-textmain via-black to-textmain opacity-80 z-0"
       ></div>
+
       <div
         class="max-w-7xl mx-auto px-5 sm:px-6 w-full relative z-10 flex flex-col items-center"
       >
-        <h2 class="text-2xl sm:text-4xl md:text-5xl font-serif text-white mb-6">
+
+        <h2
+          class="text-2xl sm:text-4xl md:text-5xl font-serif text-white mb-6"
+        >
           Ready to create your custom outfit?
         </h2>
+
         <a
           href="custom-order.html"
           class="inline-block py-3.5 sm:py-4 px-8 sm:px-10 rounded-full font-medium uppercase tracking-wider text-xs bg-white text-textmain hover:bg-beige transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg text-center mt-4"
-          >Start Your Custom Order</a
         >
+          Start Your Custom Order
+        </a>
+
       </div>
+
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-textmain text-white pt-16 sm:pt-20 pb-10">
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer
+      class="bg-textmain text-white pt-16 sm:pt-20 pb-10"
+    >
+
       <div
         class="max-w-7xl mx-auto px-5 sm:px-6 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 mb-10 sm:mb-12"
       >
+
+        <!-- Brand -->
         <div>
-          <h2 class="font-serif text-2xl sm:text-3xl mb-4">Ranu's Boutique</h2>
-          <p class="text-gray-400 text-sm leading-relaxed">
+
+          <h2 class="font-serif text-2xl sm:text-3xl mb-4">
+            Ranu's Boutique
+          </h2>
+
+          <p
+            class="text-gray-400 text-sm leading-relaxed"
+          >
             Creating one-of-a-kind, hand-painted masterpieces that celebrate
             artistry and individuality.
           </p>
+
         </div>
+
+
+        <!-- Quick Links -->
         <div>
+
           <h4
             class="text-beige font-semibold tracking-wider text-sm uppercase mb-6"
           >
             Quick Links
           </h4>
+
           <ul class="space-y-3 text-sm text-gray-400">
+
             <li>
               <a
                 href="about.html"
                 class="hover:text-white transition-colors duration-300"
-                >The Artist</a
               >
+                The Artist
+              </a>
             </li>
+
             <li>
               <a
                 href="gallery.html"
                 class="hover:text-white transition-colors duration-300"
-                >Gallery</a
               >
+                Gallery
+              </a>
             </li>
+
             <li>
               <a
                 href="custom-order.html"
                 class="hover:text-white transition-colors duration-300"
-                >Request Custom Order</a
               >
+                Request Custom Order
+              </a>
             </li>
+
             <li>
               <a
                 href="contact.html"
                 class="hover:text-white transition-colors duration-300"
-                >Contact Us</a
               >
+                Contact Us
+              </a>
             </li>
+
           </ul>
+
         </div>
+
+
+        <!-- Contact -->
         <div>
+
           <h4
             class="text-beige font-semibold tracking-wider text-sm uppercase mb-6"
           >
             Contact
           </h4>
+
           <p class="text-gray-400 text-sm mb-2">
             Email: ranudasmondal@gmail.com
           </p>
-          <p class="text-gray-400 text-sm mb-2">WhatsApp: +91 8820988244</p>
+
+          <p class="text-gray-400 text-sm mb-2">
+            WhatsApp: +91 8820988244
+          </p>
+
           <p class="text-gray-400 text-sm leading-relaxed">
             Location: Jangalpara, PO Magra, Hooghly, West Bengal 712148
           </p>
+
         </div>
+
+
+        <!-- Connect -->
         <div>
+
           <h4
             class="text-beige font-semibold tracking-wider text-sm uppercase mb-6"
           >
             Connect
           </h4>
+
           <div class="flex gap-4">
+
             <a
-              href="https://www.instagram.com/ranu_das_17"
+              href="https://www.instagram.com/ranus_atelier/"
+              target="_blank"
+              rel="noopener noreferrer"
               class="w-10 h-10 rounded-full bg-white/10 hover:bg-rosegold text-white flex items-center justify-center transition-colors duration-300"
-              ><i class="fab fa-instagram"></i
-            ></a>
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+
             <a
               href="#"
               class="w-10 h-10 rounded-full bg-white/10 hover:bg-rosegold text-white flex items-center justify-center transition-colors duration-300"
-              ><i class="fab fa-pinterest"></i
-            ></a>
+              aria-label="Pinterest"
+            >
+              <i class="fab fa-pinterest"></i>
+            </a>
+
             <a
               href="https://www.facebook.com/profile.php?id=100063997442026"
               target="_blank"
+              rel="noopener noreferrer"
               class="w-10 h-10 rounded-full bg-white/10 hover:bg-rosegold text-white flex items-center justify-center transition-colors duration-300"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
           </div>
+
         </div>
+
       </div>
+
+
+      <!-- Copyright -->
       <div
         class="border-t border-white/10 pt-8 text-center text-xs text-gray-600"
       >
-        <p>&copy; 2026 Ranu's Boutique. All Rights Reserved.</p>
+
+        <p>
+          &copy; 2026 Ranu's Boutique. All Rights Reserved.
+        </p>
+
       </div>
+
     </footer>
-    </div>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/918820988244" target="_blank" class="whatsapp-float">
-      <i class="fab fa-whatsapp"></i>
-    </a>
+  </div>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
-  </body>
+
+  <!-- =========================
+       WHATSAPP BUTTON
+  ========================== -->
+  <a
+    href="https://wa.me/918820988244"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-float"
+    aria-label="Chat on WhatsApp"
+  >
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+</body>
+
 </html>
